@@ -1,8 +1,9 @@
 import Header from "./assets/components/Header";
 import Course from "./assets/components/Course";
+import Main from "./assets/components/Main";
+import Footer from "./assets/components/Footer";
 
 import "./assets/css/styles.css";
-import Main from "./assets/components/Main";
 function App() {
   const courseData = [
     {
@@ -45,9 +46,12 @@ function App() {
             key={course.id}
             title={course.title}
             img={course.img}
-            status={course.status === true ? "" : "غير متاح"}
+            status={course.status === true ? "متاح" : "مغلق "}
           />
         ))}
+      </section>
+      <section className="footer section">
+        <Footer />
       </section>
     </>
   );
