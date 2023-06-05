@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+}
+
+.hero-section {
+  // background-image: url("../curveNegative.svg");
+  background-color: #3e4c9b;
+  .header {
+    .logo-box {
+      height: 4rem;
+      width: 4rem;
+      .logo {
+        height: 100%;
+      }
+    }
+    .nav {
+      padding: 1rem 5rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .nav-list {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+        li {
+          a:active,
+          a:visited,
+          a:link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// courses section
+.courses-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  padding: 3rem 5rem;
+  .course-card {
+    box-shadow: 2px 0 3px 2px #ccc;
+    padding: 2rem;
+    height: 20rem;
+    border-right: 8px solid #3e4c9b;
+    border-radius: 13px;
+    .title-logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .course-img {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        padding: 0 2rem;
+        color: #444;
+        font-size: 1.1rem;
+      }
+    }
+    .desc {
+      color: #333;
+      margin: 4rem 0;
+      text-align: right;
+      .date {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 1rem;
+      }
+      .starts-at {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        color: #333;
+        border: none;
+        border-radius: 10px;
+        &:nth-child(1) {
+          background-color: transparent;
+          border: 1px solid #333;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
+}
