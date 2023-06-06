@@ -1,5 +1,5 @@
 ## Tuwaiq Academy website clone
-### install
+### Install
 ``` npm install ```
 ### Run Command
 ``` npm run dev ```
